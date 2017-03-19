@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wei.chartview.ui.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_getdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="获取数据"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f4f4f4"
+            android:orientation="vertical">
+
+            <com.wei.chartview.view.CircleView
+                android:id="@+id/circle_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp" />
+
+            <com.wei.chartview.view.ColumnView
+                android:id="@+id/columview"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginTop="@dimen/space_10" />
+
+
+            <com.wei.chartview.view.FloatingView
+                android:id="@+id/floatingview"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginTop="10dp" />
+
+            <com.wei.chartview.view.AssetsMovementsView
+                android:id="@+id/assets_movementview"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
